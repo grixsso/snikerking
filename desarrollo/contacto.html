@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contacto</title>
+    <link rel="shortcut icon" href="img/cua.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="index.html">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="formularioejer.html">
+    <link rel="stylesheet" type="text/css" href="formularioejer.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+
+<style>
+    /* Estilo para el botón de recuperación de contraseña */
+.recover-button {
+    background-color: #a8aeb4; /* Color de fondo azul */
+    color: #d36969; /* Color del texto blanco */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .recover-button:hover {
+    background-color: #bcd5f0; /* Color de fondo azul más oscuro al pasar el cursor */
+  }
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+		    <a href="index.html">Inicio</a>
+            <a href="acercade.html">Acerca de</a>
+            <a href="servicio.html">Servicios</a>
+            <a href="catalogo.html">Catalogo</a>
+            <a href="contacto.html">Contacto</a>
+		</nav>
+        <section class="textos-header">
+            <h1>“Contactanos”</h1>
+            <h2>página web para venta de tenis</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-8.74,37.98 C406.04,229.44 242.94,-87.33 501.97,149.50 L505.36,160.36 L-0.84,149.50 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+	</header>
+    </section>
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Donde contactarnos</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/Facebook.png" alt="">
+                        <h3>Facebook</h3>
+                        <p>https://www.facebook.com/</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/What.png" alt="">
+                        <h3>whatsapp</h3>
+                        <span>Chat aqui </span>
+                        <a aria-label="Chat on WhatsApp" href="https://wa.me/5536670990?text=Me%20interesa%20el%20servicio"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" /> </a>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/web.jpg" alt="">
+                        <h3>pagina web</h3>
+                        <p>file:///C:/Users/Lenovo/Downloads/P%C3%A1gina%20web%20AlexCG%20Design/index.html</p>
+                    </div>
+                </div>
+            </div>
+            <div class="registration-form">
+                <h1>Registro</h1>
+                <form action="procesar_registro.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+        
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="text" id="correo" name="correo" required>
+        
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+        
+                    <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+        
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+            <h1>Recuperar Contraseña</h1>
+    <form action="recover_password.php" method="post">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Enviar Correo de Recuperación</button>
+    </form>
+        
+
+    <script src="formularioejer.js"></script>
+            </head>
+        </section>    
+</body>
+</html>

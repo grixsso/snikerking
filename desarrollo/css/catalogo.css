@@ -1,0 +1,35 @@
+.container {
+    text-align: center;
+
+  }
+  /* Estilos para el mensaje de error */
+  .error-message {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d9534f; /* Color de error rojo */
+  }
+  
+  /* Estilos para el mensaje adicional o descripción */
+  .error-description {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Estilos para el botón de regreso */
+  .back-button {
+    margin-top: 70px !important;
+    background-color: #cf4154; /* Color de botón azul */
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .back-button:hover {
+    background-color: #3eb1c0; /* Color de botón azul más oscuro al pasar el cursor */
+  }
