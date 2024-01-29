@@ -1,0 +1,15 @@
+CREATE DATABASE LISTA;
+
+USE LISTA;
+
+CREATE TABLE LISTA (
+    id INT PRIMARY KEY,
+    nivel_grado_academico VARCHAR(255),
+    duracion_curso INT,
+    carrera VARCHAR(255),
+    alumno VARCHAR(255),
+    calendario VARCHAR(255),
+    porcentaje_asistencia VARCHAR(10),
+    porcentaje_inasistencia VARCHAR(10),
+    numero_inasistencias INT
+);

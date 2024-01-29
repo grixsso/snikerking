@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css">
+    <title>PASE DE LISTA</title>
+<style type="text/css">
+    body{
+        background-color: #06A33F;
+    }
+form#cuenta {
+margin:auto;
+background:#06A33F ;
+color: white;
+font-size: 12px;
+padding: 100px;
+width: 500px;
+border:solid 5px black;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+
+form#cuenta fieldset {
+border: none;
+}
+
+form#cuenta input{
+font-size:12px;
+background: white;
+border:solid 1px black;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+float: right;
+margin-right: 15px;
+width: 200px;
+}
+
+form#cuenta label{
+text-decoration-color: black ;
+}
+
+form#cuenta ol li {
+line-height: 25px;
+list-style: none;
+}
+
+form#cuenta [required]{
+border:solid 1px black;
+}
+
+input:required {
+outline: 1px solid black;
+}
+h1{
+
+                background-color: #F8FAF9 ;
+            }
+  
+</style>
+</head>
+
+<body>
+<br>
+    <br>
+ <h1 align="center"><strong>UTFV</strong></h1>
+<form id="cuenta" action="cuenta.php" method="get" name="Formulario"  onsubmit="return uno();">
+<fieldset>
+<legend><font color="black" size="4">PASE DE LISTA</font></legend>
+<ol>
+    <!-- matricula -->
+    <label for="nivel">Matricula:</label>
+    <input type="number" id="id" name="nivel" required>
+
+    <br>
+    <br>
+
+<!-- Nivel o grado académico -->
+    <label for="nivel">Grado Académico:</label>
+    <input type="text" id="nivel" name="nivel" required>
+
+    <br>
+    <br>
+
+    <!-- Duración del curso o periodo académico -->
+    <label for="duracion">Periodo Académico:</label>
+    <input type="text" id="duracion" name="duracion" required>
+
+    <br>
+    <br>
+
+    <!-- Nombre de la carrera -->
+    <label for="carrera">Nombre de la Carrera:</label>
+    <input type="text" id="carrera" name="carrera" required>
+
+    <br>
+    <br>
+
+
+    <!-- Datos personales del alumno -->
+    <label for="nombre">Nombre del Alumno:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <br>
+    <br>
+
+    <!-- Calendario (Fechas de la sesión) -->
+    <label for="calendario">Fechas de la Sesión:</label>
+    <input type="date" id="calendario" name="calendario" class="datepicker" required>
+    
+    <br>
+    <br>
+
+    <!-- Porcentaje de asistencia -->
+    <label for="porcentaje_asistencia">Porcentaje de Asistencia:</label>
+    <input type="number" id="porcentaje_asistencia" name="porcentaje_asistencia" min="0" max="100" required>
+
+    <br>
+    <br>
+
+    <!-- Porcentaje de inasistencia -->
+    <label for="porcentaje_inasistencia">Porcentaje de Inasistencia:</label>
+    <input type="number" id="porcentaje_inasistencia" name="porcentaje_inasistencia" min="0" max="100" required>
+
+    <br>
+    <br>
+
+    <!-- Numero de inasistencias -->
+    <label for="num_inasistencias">Número de Inasistencias:</label>
+    <input type="number" id="num_inasistencias" name="num_inasistencias" min="0" required>
+
+    <br>
+    <br>
+</fieldset>
+
+
+<fieldset>
+<center><input type="submit" name="" value="crear"></center>
+</fieldset>
+</form>
+</body>
+</html>
